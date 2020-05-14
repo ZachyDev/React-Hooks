@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+// import HookCounter from './Main/UseStateHook/HookCounter';
+import HookCounter2 from './Main/UseStateHook/HookCounter2';
+import HookCounter3 from './Main/UseStateHook/HookCounter3';
+import HookCounter4 from './Main/UseStateHook/HookCounter4'
+class App extends Component {
+  render() {
+    return (
+      <div className = "App">
+        {/*main page */}
+        <HookCounter2 />
+        <HookCounter3 />
+        <HookCounter4 />
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
+
