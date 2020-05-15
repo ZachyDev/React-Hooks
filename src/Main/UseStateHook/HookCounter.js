@@ -6,7 +6,7 @@ function HookCounter() {
   return (
     <div>
       Count - { count }
-      <button onClick = {() =>  setCount(count + 1 )}>Counter</button>
+      <button onClick = {() => setCount(count + 1 )}>Counter</button>
     </div>
   )
 }

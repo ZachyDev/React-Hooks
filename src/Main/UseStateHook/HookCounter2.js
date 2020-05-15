@@ -5,10 +5,10 @@ function HookCounter2() {
     const [count, setCount] = useState(initialState)
     return (
         <div>
-        Count: { count }
-            <button onClick = { ()=> setCount(initialState)}>Reset Counter</button> 
-            <button onClick = { ()=> setCount(count + 1)}>Increment Counter</button>
-            <button onClick = { ()=> setCount(count - 1)}>Decrement Counter</button>
+        count: { count }
+        <button onClick = {() => setCount(initialState)}>Reset Counter</button>
+        <button onClick = {() => setCount(count + 1)}>Increment Counter</button>
+        <button onClick = {() => setCount(count - 1)}>Decrement Counter</button>   
         </div>
     )
 }

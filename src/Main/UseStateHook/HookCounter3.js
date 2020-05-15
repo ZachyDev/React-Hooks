@@ -1,24 +1,22 @@
 import React, { useState } from 'react'
 
 function HookCounter3() {
-    const [user, setUser] = useState({ Firstname: '', Lastname: '' })
+    const [user, setUser] = useState({ firstName: '', lastName: '' });
     return (
         <form>
             <input
              type="text" 
-             value = { user.Firstname } 
-             onChange = { e => setUser({ ...user,Firstname: e.target.value })}
+             value= { user.firstName }
+             onChange = { e => setUser({...user, firstName: e.target.value })}
+             /> 
+             <input
+             type="text" 
+             value= { user.lastName }
+             onChange = { e => setUser({...user, lastName: e.target.value })}
              />
-             
-             <input 
-             type = "text"
-             value = { user.Lastname }
-             onChange = { e => setUser({ ...user,Lastname: e.target.value })}
-             />
-             <h2>FirstName - { user.Firstname }</h2>
-             <h2> LastName - { user.Lastname }</h2>
-             <strong> { JSON.stringify(user) }</strong>
-
+             <h2>FirstName - { user.firstName } </h2>
+             <h2>lastName - { user.lastName }</h2>
+             {JSON.stringify(user)}
         </form>
     )
 }
