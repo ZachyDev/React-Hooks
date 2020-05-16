@@ -12,9 +12,6 @@ class App extends Component {
         <HookCounter2 />
         <HookCounter3 />
         <HookCounter4 />
-   
-
-
       </div>
     )
   }
